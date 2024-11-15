@@ -1,0 +1,12 @@
+[build]
+  command = "npm install && npm run build"
+  publish = "public"
+
+[[plugins]]
+  package = "@netlify/plugin-functions-install-core"
+
+[dev]
+  framework = "#static"
+
+[functions]
+  directory = "functions"
